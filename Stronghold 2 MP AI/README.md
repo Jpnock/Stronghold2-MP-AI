@@ -1,0 +1,3 @@
+This simple program byte patches the Stronghold 2 game, while it is running, with 0x90 instruction codes (NOP codes) as to stop the code which disables the AI option in multiplayer from executing.
+
+To run, simply compile - making sure you are in release mode - and if you are having any problems with the program not working, try running it as administrator as it may require this write into the game's memory.
