@@ -16,7 +16,7 @@ int main()
 		MemoryExt pMemoryExt(hProc); // Init the MemoryExt class with the handle to the process I want to modify.
 
 		printf("\nSearching for AI MP Pattern!\n");
-		int iAddrToNOP = pMemoryExt.FindPattern(szMPAIFuncSig, szMPAIFuncMask); // Try to find the pattern for the AI Disable instructions.
+		int iAddrToNOP = pMemoryExt.FindPatternMainModule(szMPAIFuncSig, szMPAIFuncMask); // Try to find the pattern for the AI Disable instructions.
 
 		if (iAddrToNOP != -1) // Check to make sure an invalid address has not been returned.
 		{
